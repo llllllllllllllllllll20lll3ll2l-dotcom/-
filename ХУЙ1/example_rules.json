@@ -1,0 +1,35 @@
+{
+  "rules": [
+    {
+      "path": "C:\\Users\\%USERNAME%\\Downloads",
+      "patterns": ["*"],
+      "extensions": ["tmp", "log", "old"],
+      "min_size_kb": 1024,
+      "max_size_kb": 0,
+      "older_than_days": 30,
+      "recursive": true,
+      "include_dirs": false,
+      "enabled": true
+    },
+    {
+      "path": "C:\\Windows\\Temp",
+      "patterns": ["*"],
+      "extensions": [],
+      "min_size_kb": 0,
+      "max_size_kb": 0,
+      "older_than_days": 7,
+      "recursive": true,
+      "include_dirs": false,
+      "enabled": false
+    }
+  ],
+  "use_recycle_bin": true,
+  "allow_protected": false,
+  "allow_self_delete": false,
+  "follow_symlinks": false,
+  "antivirus_enabled": true,
+  "quarantine_enabled": true,
+  "quarantine_dir": "",
+  "allow_infected_delete": false,
+  "signatures_file": ""
+}
